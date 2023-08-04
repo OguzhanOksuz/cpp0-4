@@ -4,10 +4,20 @@ CC	=	c++
 
 CFLAGS	=	-Wall -Wextra -Werror -std=c++98
 
-SRC	=	meghapone.cpp
+SRC	=	megaphone.cpp
 
-OBJS	=	
+OBJS	=	$(SRC:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): 
+$(NAME): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+
+clean:
+	rm -rf $(OBJS)
+
+fclean: clean
+	rm -rf $(NAME)
+
+re: fclean all
+
