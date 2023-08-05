@@ -6,7 +6,7 @@
 /*   By: ooksuz <ooksuz@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 16:01:47 by ooksuz            #+#    #+#             */
-/*   Updated: 2023/08/04 18:24:03 by ooksuz           ###   ########.fr       */
+/*   Updated: 2023/08/04 19:45:01 by ooksuz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,20 @@
 int	main(int ac, char **av)
 {
 	std::string	prompt;
-	PhoneBook	my_phone[8];
+	PhoneBook	my_phone;
 
 	prompt = "";
-	std::cout << "* To save a new contact enter 'ADD'" << std::endl;
-	std::cout << "* To display a specific contact enter 'SEARCH'" << std::endl;
-	std::cout << "* To exit enter 'EXIT'" << std::endl;
-	while (prompt.compare("EXIT"))
+	while (prompt != "EXIT")
 	{
-		if (!prompt.compare("ADD"))
+		if (prompt == "ADD")
 		{
-			std::cout << "add" << std::endl;
+			my_phone.add();
 		}
-		else if (!prompt.compare("SEARCH"))
+		else if (prompt == "SEARCH")
 		{
-			std::cout << "Search" << std::endl;
+			my_phone.search();
 		}
-		else if (prompt.compare(""))
+		else if (prompt != "")
 		{
 			std::cout << "Entered an invalid command" << std::endl;
 		}

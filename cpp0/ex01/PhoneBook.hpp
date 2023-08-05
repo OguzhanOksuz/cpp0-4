@@ -6,7 +6,7 @@
 /*   By: ooksuz <ooksuz@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 17:48:08 by ooksuz            #+#    #+#             */
-/*   Updated: 2023/08/04 18:23:09 by ooksuz           ###   ########.fr       */
+/*   Updated: 2023/08/04 19:31:51 by ooksuz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@
 class PhoneBook
 {
 private:
-	Contact	contacts;
+	Contact	contacts[8];
+	int	counter;
 public:
 	PhoneBook();
 	~PhoneBook();
