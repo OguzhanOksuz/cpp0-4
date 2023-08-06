@@ -6,14 +6,14 @@
 /*   By: ooksuz <ooksuz@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 16:01:47 by ooksuz            #+#    #+#             */
-/*   Updated: 2023/08/04 19:45:01 by ooksuz           ###   ########.fr       */
+/*   Updated: 2023/08/06 12:50:48 by ooksuz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "PhoneBook.hpp"
 
-int	main(int ac, char **av)
+int	main()
 {
 	std::string	prompt;
 	PhoneBook	my_phone;
