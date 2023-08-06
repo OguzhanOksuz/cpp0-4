@@ -6,7 +6,7 @@
 /*   By: ooksuz <ooksuz@student.42istanbul.com.tr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/06 21:55:32 by ooksuz            #+#    #+#             */
-/*   Updated: 2023/08/06 22:05:50 by ooksuz           ###   ########.fr       */
+/*   Updated: 2023/08/06 22:57:56 by ooksuz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ class	Fixed
 {
 	private:
 		int			_value;
-		static const int	_fraction;
+		static const int	_fraction = 8;
 	public:
 		Fixed(void);
 		Fixed(Fixed const &ref);
